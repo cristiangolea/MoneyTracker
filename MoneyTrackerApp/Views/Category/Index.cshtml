@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<MoneyTrackerApp.Models.Category>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["PageTitle"]="Categories";
+    ViewData["PageActionText"] = "+ New Categories";
+    ViewData["PageActionUrl"] = "Category\\AddOrEdit";
 }
 
 <div class="row">
