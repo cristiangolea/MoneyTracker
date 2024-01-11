@@ -9,6 +9,7 @@ namespace MoneyTrackerApp.Models
         public int CategoryId { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
+        [Required(ErrorMessage = "Title is mandatory.")]
         public string Title { get; set; }
 
         [Column(TypeName = "nvarchar(50)")] 
